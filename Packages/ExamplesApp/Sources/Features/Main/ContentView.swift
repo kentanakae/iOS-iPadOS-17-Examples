@@ -1,11 +1,14 @@
+import DataAccess
 import SwiftUI
 import SwiftData
 
-struct ContentView: View {
+public struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
-    
-    var body: some View {
+
+    public init() {}
+
+    public var body: some View {
         NavigationView {
             List {
                 ForEach(items) { item in
@@ -41,7 +44,9 @@ struct ContentView: View {
     private func deleteItems(offsets: IndexSet) {
         withAnimation {
             for index in offsets {
-                modelContext.delete(items[index])
+                if !items.isEmpty {
+                    modelContext.delete(items[index])
+                }
             }
         }
     }

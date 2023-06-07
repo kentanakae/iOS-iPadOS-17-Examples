@@ -7,11 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		37DD96892A308FF3004D2DD8 /* iOS_iPadOS_17_ExamplesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DD96882A308FF3004D2DD8 /* iOS_iPadOS_17_ExamplesApp.swift */; };
-		37DD968B2A308FF3004D2DD8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DD968A2A308FF3004D2DD8 /* ContentView.swift */; };
+		37DCFB3D2A30D56600A3CD8A /* ExamplesApp in Frameworks */ = {isa = PBXBuildFile; productRef = 37DCFB3C2A30D56600A3CD8A /* ExamplesApp */; };
+		37DD96892A308FF3004D2DD8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DD96882A308FF3004D2DD8 /* main.swift */; };
 		37DD968D2A308FF5004D2DD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37DD968C2A308FF5004D2DD8 /* Assets.xcassets */; };
 		37DD96902A308FF5004D2DD8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37DD968F2A308FF5004D2DD8 /* Preview Assets.xcassets */; };
-		37DD96922A308FF5004D2DD8 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DD96912A308FF5004D2DD8 /* Item.swift */; };
 		37DD969E2A308FF5004D2DD8 /* iOS_iPadOS_17_ExamplesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DD969D2A308FF5004D2DD8 /* iOS_iPadOS_17_ExamplesTests.swift */; };
 		37DD96A82A308FF5004D2DD8 /* iOS_iPadOS_17_ExamplesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DD96A72A308FF5004D2DD8 /* iOS_iPadOS_17_ExamplesUITests.swift */; };
 		37DD96AA2A308FF5004D2DD8 /* iOS_iPadOS_17_ExamplesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DD96A92A308FF5004D2DD8 /* iOS_iPadOS_17_ExamplesUITestsLaunchTests.swift */; };
@@ -36,11 +35,9 @@
 
 /* Begin PBXFileReference section */
 		37DD96852A308FF3004D2DD8 /* iOS-iPadOS-17-Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-iPadOS-17-Examples.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		37DD96882A308FF3004D2DD8 /* iOS_iPadOS_17_ExamplesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_iPadOS_17_ExamplesApp.swift; sourceTree = "<group>"; };
-		37DD968A2A308FF3004D2DD8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		37DD96882A308FF3004D2DD8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		37DD968C2A308FF5004D2DD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37DD968F2A308FF5004D2DD8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		37DD96912A308FF5004D2DD8 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		37DD96932A308FF5004D2DD8 /* iOS_iPadOS_17_Examples.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOS_iPadOS_17_Examples.entitlements; sourceTree = "<group>"; };
 		37DD96942A308FF5004D2DD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37DD96992A308FF5004D2DD8 /* iOS-iPadOS-17-ExamplesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-iPadOS-17-ExamplesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37DCFB3D2A30D56600A3CD8A /* ExamplesApp in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +73,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37DCFB3B2A30D56600A3CD8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		37DD967C2A308FF3004D2DD8 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +87,7 @@
 				37DD969C2A308FF5004D2DD8 /* iOS-iPadOS-17-ExamplesTests */,
 				37DD96A62A308FF5004D2DD8 /* iOS-iPadOS-17-ExamplesUITests */,
 				37DD96862A308FF3004D2DD8 /* Products */,
+				37DCFB3B2A30D56600A3CD8A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,10 +104,8 @@
 		37DD96872A308FF3004D2DD8 /* iOS-iPadOS-17-Examples */ = {
 			isa = PBXGroup;
 			children = (
-				37DD96882A308FF3004D2DD8 /* iOS_iPadOS_17_ExamplesApp.swift */,
-				37DD968A2A308FF3004D2DD8 /* ContentView.swift */,
+				37DD96882A308FF3004D2DD8 /* main.swift */,
 				37DD968C2A308FF5004D2DD8 /* Assets.xcassets */,
-				37DD96912A308FF5004D2DD8 /* Item.swift */,
 				37DD96932A308FF5004D2DD8 /* iOS_iPadOS_17_Examples.entitlements */,
 				37DD96942A308FF5004D2DD8 /* Info.plist */,
 				37DD968E2A308FF5004D2DD8 /* Preview Content */,
@@ -150,6 +154,9 @@
 			dependencies = (
 			);
 			name = "iOS-iPadOS-17-Examples";
+			packageProductDependencies = (
+				37DCFB3C2A30D56600A3CD8A /* ExamplesApp */,
+			);
 			productName = "iOS-iPadOS-17-Examples";
 			productReference = 37DD96852A308FF3004D2DD8 /* iOS-iPadOS-17-Examples.app */;
 			productType = "com.apple.product-type.application";
@@ -264,9 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37DD968B2A308FF3004D2DD8 /* ContentView.swift in Sources */,
-				37DD96922A308FF5004D2DD8 /* Item.swift in Sources */,
-				37DD96892A308FF3004D2DD8 /* iOS_iPadOS_17_ExamplesApp.swift in Sources */,
+				37DD96892A308FF3004D2DD8 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,6 +605,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		37DCFB3C2A30D56600A3CD8A /* ExamplesApp */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ExamplesApp;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 37DD967D2A308FF3004D2DD8 /* Project object */;
 }
